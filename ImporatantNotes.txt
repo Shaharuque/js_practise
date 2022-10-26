@@ -1,0 +1,2 @@
+->closure,lexical scoping,IIFE related
+https://stackabuse.com/javascripts-immediately-invoked-function-expressions/
