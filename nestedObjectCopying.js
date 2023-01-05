@@ -28,3 +28,26 @@ newObject.structure.eyes = 5;
 
 console.log("copied object-->", newObject);
 console.log("original object-->", student);
+
+const teacher = {
+  name2: "sharlin",
+  age2: 32,
+};
+const spreaded = { ...student, ...teacher };
+console.log("spreaded object", spreaded);
+
+const testing = [
+  {
+    good: true,
+  },
+  { good: false },
+];
+
+const newTest = testing.map((p) => {
+  return {
+    ...p,
+    good: !p.good,
+  };
+});
+
+console.log(newTest);

@@ -11,7 +11,7 @@ const filters = [
   { text: "InActive", value: false },
 ];
 
-const filteredResult = shop.filter((product) => product.status === false);
+const filteredResult = shop.filter((product) => product.status !== false);
 console.log(filteredResult);
 
 const newResult = filters.find((product) => product.value === false);

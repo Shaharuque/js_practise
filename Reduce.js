@@ -32,3 +32,20 @@ const result3 = numbers.reduce(
   (accumulator, currentValue) => (accumulator += currentValue)
 );
 console.log("Far clearner code ", result3);
+
+const computerSale = [
+  { type: "laptop", price: 2100 },
+  { type: "laptop", price: 2400 },
+  { type: "laptop", price: 1100 },
+  { type: "laptop", price: 2900 },
+  { type: "laptop", price: 2700 },
+];
+
+const highestPrice = (computerSale) => {
+  const maximumPrice = computerSale.reduce((maxPrice, currentComputer) => {
+    return Math.max(maxPrice, currentComputer?.price);
+  }, 0);
+  return maximumPrice;
+};
+
+console.log(highestPrice(computerSale));
