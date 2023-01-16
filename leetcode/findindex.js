@@ -28,4 +28,4 @@ var searchRange = function (nums, target) {
   }
 };
 
-console.log(searchRange([1], 1));
+console.log(searchRange([1, 3, 5, 6, 1], 1));

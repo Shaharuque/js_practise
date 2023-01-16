@@ -31,6 +31,7 @@ var reverse = function (x) {
     }
   }
   if (reversed_num_Negative) {
+    // if the quotient is strictly greater than 2^31 - 1, then return 0, and if the quotient is strictly less than -231, then return -231.
     return reversed_num_Negative > 0x7fffffff ? 0 : -reversed_num_Negative;
   } else {
     return reversed_num_positive > 0x7fffffff ? 0 : reversed_num_positive;

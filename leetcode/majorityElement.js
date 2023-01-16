@@ -1,6 +1,6 @@
-// var majorityElement = function (nums) {};
+var majorityElement = function (nums) {};
 
-// majorityElement([3, 2, 3]);
+majorityElement([3, 2, 3]);
 
 var strStr = function (haystack, needle) {
   let result = haystack.indexOf(needle);
