@@ -4,8 +4,7 @@ if(str === '') {
     return [];
 }
 if(typeof str !== 'string') {
-    throw new Error('Input must be a string');
-}
+    throw new Error 
 var words = str.split(' ');
 var wordCount = {};
 var highestCount = 0;
